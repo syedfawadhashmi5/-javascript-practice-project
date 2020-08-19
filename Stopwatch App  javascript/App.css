@@ -1,0 +1,36 @@
+body {
+    background-color: brown;
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    transform: translate(5px, 50px);
+    top: 87px;
+    bottom: 35px;
+
+}
+
+h1 {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    width: 20%;
+    justify-content: center;
+    display: inline-flex;
+}
+
+button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 37px;
+    height: 37px;
+}
