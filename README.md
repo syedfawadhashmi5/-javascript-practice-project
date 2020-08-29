@@ -3,7 +3,7 @@
 
 javaScript Quiz web app URL {
 
-quiz-web-app-v1.web.app/
+http://quiz-web-app-v1.web.app/
 
 }
 
