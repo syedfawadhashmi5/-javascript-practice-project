@@ -1,0 +1,37 @@
+var count = [0];
+
+function next() {
+  count++
+  show(count)
+  console.log(count);
+}
+
+function show(count) {
+  var QsANS = document.getElementById("QsANS");
+
+  QsANS.innerHTML = `
+<h2>${questions[count].question}</h2>
+<ul>
+   <li class="option">${questions[count].option[0]}</li>
+   <li class="option">${questions[count].option[1]}</li>
+   <li class="option">${questions[count].option[2]}</li>
+</ul>
+
+`;
+toggleActive();
+}
+
+function toggleActive() {
+let option = document.querySelectorAll("li.option");
+
+for(let i = 0; i < option.length; i++){
+  option[i].onclick = function(){
+    for(let i = 0; i < option.length; i++){
+      if(option[i].classList.contains("active")){
+        option[i].classList.remove("active");
+      }
+    }
+    option[i].classList.add("active");
+  }
+}
+}
